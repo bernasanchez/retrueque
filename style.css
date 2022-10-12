@@ -53,11 +53,11 @@ a{
             color: black;
         }
         .menu-logo-img{
-            height: 80px;
+            height: 50px;
             border-radius: 50%;
         }
         .menu-logo-img:hover{
-            box-shadow: 0.5px 3px 3px #f3f3f380;
+            box-shadow: 3px 3px 3px #f3f3f380;
             transition: 0.5 ease;
         }
     
@@ -77,6 +77,9 @@ a{
         .header-menu-navbar a:hover{
             color: rgba(212, 212, 212, 0.884)
         }
+        .header-menu-navbar i{
+            margin-right: 3px;
+        }
     
 
     /* Header - Menu Usuario */  
@@ -88,16 +91,37 @@ a{
         flex: 1 1 auto;
         font-size: 10px;
     }
-        .header-menu-usuario i{
-        color: black;
-    }
-        .btn-usuario{
+        .usuario-login{
+            height: 28px;
+            margin-right: 10px;
+            cursor: pointer;
+            transition: all 150ms ease;
+        }
+            .usuario-login:hover{
+                border-radius: 50%;
+                box-shadow: 2px 3px 3px #3ee9a280;
+            }
+        .usuario-signup{
+            height: 25px;
+            cursor: pointer;
+            transition: all 150ms ease;
+        }
+            .usuario-signup:hover{
+                border-radius: 50%;
+                box-shadow: 2px 3px 3px #f33d3db6;
+            }
+
+
+        /* .header-menu-usuario i{
+            color: black;
+        } */
+        /* .btn-usuario{
             height: 50px;
         }
         .btn-usuario i{
             font-size: 10px;
             margin: 0 auto;
-        }
+        } */
 
 
     .header-presentation{
@@ -109,8 +133,10 @@ a{
     }
         h1{
             /* background-color: beige; */
-            font-size: 45px;
+            font-size: 50px;
             line-height: 1.6;
+            color: white;
+            letter-spacing: 5px;
         }
 
 /* Main - Seccion Productos */
@@ -141,6 +167,7 @@ a{
         .card{
             background-color: #EEE3CB;
             width: 100%;
+            opacity: .8;
         }
         .card-body{
             font-family: 'Montserrat', sans-serif;
@@ -149,28 +176,70 @@ a{
     
 /* Footer - Seccion Final */
 .footer{
-    background-color: #3982af;
+    /* background-color: #3982af; */
+    background-image: url(https://i.postimg.cc/fy14tcYd/joshua-rivera-usmh-Pm-T5sj0-unsplash.jpg);
+    background-position: center;
+    background-size: auto;
     display: flex;
     flex-flow: row nowrap;
-    height: 100px;
+    height: 400px;
     align-items: center;
 }
+    .footer li{
+        list-style: none; 
+    }
+    .footer ul li a{
+        color: rgba(212, 212, 212, 0.884)
+    }
     .footer-logo{
-        background-color: #EEE3CB;
+        /* background-color: #EEE3CB; */
         flex:1 1 auto;
-        height: 50px;
+        height: 300px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
-    .footer-contact{
-        background-color: #EEE3CB;
-        flex:1 1 auto;
-        height: 50px;
-    }
-    .footer-social{
-        background-color: #EEE3CB;
-        flex:1 1 auto;
-        height: 50px;
-    }
+        .footer-logo h4{
+            font-size: 40px; 
+            font-weight: 700;
+            color: rgba(212, 212, 212, 0.884);
+            
+        }
 
+    .footer-enlaces{
+        /* background-color: #EEE3CB; */
+        flex:1 1 auto;
+        height: 300px; 
+        text-align: left; 
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+        .footer-enlaces ul{
+            padding-left: 0px; 
+        }
+           
+    .footer-contacto{
+        /* background-color: #EEE3CB; */
+        flex:1 1 auto;
+        height: 300px;
+        text-align: left; 
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 40px;
+        
+    }
+        .footer-contacto ul{
+            padding-left: 0px;
+        }
+        .footer-contacto li a i{
+            margin-right: 10px;
+        }
 @media all and (max-width:600px) {
     .seccion-catalogo{
         flex-direction: column;

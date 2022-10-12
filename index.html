@@ -27,8 +27,8 @@
     <div class="container">
 
         <!-- Menu Header -->
-        <header class="header margen-interno">
-            <div class="header-menu">
+        <header class="header">
+            <div class="header-menu margen-interno ">
                 <div class="header-menu-logo">
                     <a href="index.html">
                         <img class="menu-logo-img" src="img/rt1.jpg" alt="">
@@ -37,13 +37,15 @@
                 <div class="header-menu-navbar">
                     <a href=""><i class="fa-solid fa-house"></i>BIENVENIDA</a>
                     <a href=""><i class="fa-solid fa-users"></i>TOUR</a>
-                    <a href=""><i class="fa-solid fa-bolt"></i>SERVICIOS</a>
+                    <a href=""><i class="fa-solid fa-bolt"></i>PRODUCTOS</a>
                     <a href=""><i class="fa-solid fa-paper-plane"></i>CONTACTO</a>
                     <a href=""><i class="fa-solid fa-gear"></i>SOPORTE</a>
                 </div>
                 <div class="header-menu-usuario">
-                    <button class="btn-usuario" href="" title="Iniciar Sesion"><i class="fa-solid fa-right-to-bracket"></i></button>
-                    <button class="btn-usuario" href="" title="Registrate"><i class="fa-solid fa-user-plus"></i></button>
+                  <img src="../img/stroke.svg" class="usuario-login" alt="user-icon" id="user" title="Iniciar Sesión">
+                  <img src="../img/share-2.svg" class="usuario-signup" alt="user-icon" id="user" title="Registrarse">
+                    <!-- <button class="btn-usuario" href="" title="Iniciar Sesion"><i class="fa-solid fa-right-to-bracket"></i></button>
+                    <button class="btn-usuario" href="" title="Registrate"><i class="fa-solid fa-user-plus"></i></button> -->
                 </div>
             </div>
             <div class="header-presentation">
@@ -61,7 +63,7 @@
                         <div class="card-body">
                           <h5 class="card-title">Card title</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <a href="#" class="btn btn-dark">Ver Detalle</a>
                         </div>
                       </div>
                 </div>
@@ -71,7 +73,7 @@
                         <div class="card-body">
                           <h5 class="card-title">Card title</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <a href="#" class="btn btn-dark">Ver Detalle</a>
                         </div>
                       </div>
                 </div>
@@ -81,7 +83,7 @@
                       <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-dark">Ver Detalle</a>
                       </div>
                     </div>
                 </div>
@@ -91,7 +93,7 @@
                       <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-dark">Ver Detalle</a>
                       </div>
                     </div>
                 </div>
@@ -101,7 +103,7 @@
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <a href="#" class="btn btn-dark">Ver Detalle</a>
                     </div>
                   </div>
                 </div>
@@ -111,7 +113,7 @@
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <a href="#" class="btn btn-dark">Ver Detalle</a>
                     </div>
                   </div>
                 </div>
@@ -121,7 +123,7 @@
                       <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-dark">Ver Detalle</a>
                       </div>
                     </div>
                 </div>
@@ -131,7 +133,7 @@
                       <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-dark">Ver Detalle</a>
                       </div>
                     </div>
                 </div>
@@ -141,9 +143,32 @@
 
         <!-- Seccion Footer  -->
         <footer class="footer margen-interno">
-            <div class="footer-logo"></div>
-            <div class="footer-contact"></div>
-            <div class="footer-social"></div>
+            <div class="footer-logo">
+              <h4>RETRUEQUE</h4>
+            </div>
+            <div class="footer-enlaces">
+              <h5>ENLACES</h5>
+              <ul>
+                <li><a href="">Bienvenida</a></li>
+                <li><a href="">Tour</a></li>
+                <li><a href="">Productos</a></li>
+                <li><a href=""></i>Contacto</a></li>
+                <li><a href=""></i>Soporte</a></li>
+              </ul>
+
+            </div>
+            <div class="footer-contacto">
+              <h5>CONTACTO</h5>
+              <ul>
+                <li><a href=""><i class="fa-solid fa-location-dot"></i>Córdoba, Argentina</a></li>
+                <li><a href=""><i class="fa-solid fa-mobile"></i>(+54) 9 3513 0741 446</a></li>
+                <li><a href=""><i class="fa-solid fa-envelope"></i>retrueque@gmail.com</a></li>
+                <li><a href=""><i class="fa-brands fa-github"></i>Github</a></li>
+                <li><a href=""><i class="fa-brands fa-linkedin"></i>Linkein</a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                <li><a href=""><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+              </ul>
+            </div>
         </footer>
     </div>
 
