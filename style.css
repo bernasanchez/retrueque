@@ -1,0 +1,178 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Vollkorn', serif; */
+}
+a{
+    text-decoration: none;
+}
+
+/* Contenedor Padre de la Web */
+.container{
+    max-width: 1400px;
+    border: 1px solid #000; /* Marcamos margenes de pagina con una bordes */
+    display: flex;
+    flex-flow: column nowrap;
+}
+.margen-interno{
+    padding: 0 50px;
+}
+
+/* Header - Seccion Menu y Presentación */
+.header {
+    /* background-color: #000; */
+    background-image: url(https://i.postimg.cc/t4mHDsNJ/lauren-mancke-a-OC7-TSLb1o8-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 400px;
+}
+
+.header-menu{
+    background-color: rgba(0,0,0,.1); /*Background con leve transparencia*/
+    display: flex;
+    flex-flow: row nowrap;
+    height: 80px;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, .5) ;
+   
+    
+}
+    /* Header - Logo */
+    .header-menu-logo{
+        /* background-color: beige; */
+        flex: 1 1 auto;
+    }
+        .header-menu-logo a{
+            color: black;
+        }
+        .menu-logo-img{
+            height: 80px;
+            border-radius: 50%;
+        }
+        .menu-logo-img:hover{
+            box-shadow: 0.5px 3px 3px #f3f3f380;
+            transition: 0.5 ease;
+        }
+    
+    /* Header - Menu Navbar */
+    .header-menu-navbar{
+        /* background-color: beige; */
+        flex: 1 5 auto;
+        font-size: 10px;
+    }
+        .header-menu-navbar a{
+            color: white;
+            font-size: 12px;
+            padding: 0 10px;
+            letter-spacing: 2px;
+            font-weight: 300;
+        }
+        .header-menu-navbar a:hover{
+            color: rgba(212, 212, 212, 0.884)
+        }
+    
+
+    /* Header - Menu Usuario */  
+    .header-menu-usuario{
+        /* background-color: beige; */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex: 1 1 auto;
+        font-size: 10px;
+    }
+        .header-menu-usuario i{
+        color: black;
+    }
+        .btn-usuario{
+            height: 50px;
+        }
+        .btn-usuario i{
+            font-size: 10px;
+            margin: 0 auto;
+        }
+
+
+    .header-presentation{
+        /* background-color: rgba(0, 255, 242, 0.479); */
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        h1{
+            /* background-color: beige; */
+            font-size: 45px;
+            line-height: 1.6;
+        }
+
+/* Main - Seccion Productos */
+.seccion-productos{
+    /* background-color: #3C2317; */
+    background-image: url(https://i.postimg.cc/cJp3mZmV/amanda-jones-w5zp-Ei-Vt-NIk-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;   
+}
+    .seccion-catalogo{
+        /* background-color: #f7f7f7; */
+        display: flex;
+        flex-flow: row wrap;
+        flex: auto;
+        
+    }
+        .seccion-catalogo-producto{
+            /* background-color: #B4CDE6; */
+            flex:1 1 auto; /* Ver tamaño de productos */
+            font-size: 12px;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+        .card{
+            background-color: #EEE3CB;
+            width: 100%;
+        }
+        .card-body{
+            font-family: 'Montserrat', sans-serif;
+            text-align: center; 
+        }
+    
+/* Footer - Seccion Final */
+.footer{
+    background-color: #3982af;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100px;
+    align-items: center;
+}
+    .footer-logo{
+        background-color: #EEE3CB;
+        flex:1 1 auto;
+        height: 50px;
+    }
+    .footer-contact{
+        background-color: #EEE3CB;
+        flex:1 1 auto;
+        height: 50px;
+    }
+    .footer-social{
+        background-color: #EEE3CB;
+        flex:1 1 auto;
+        height: 50px;
+    }
+
+@media all and (max-width:600px) {
+    .seccion-catalogo{
+        flex-direction: column;
+    }
+}
